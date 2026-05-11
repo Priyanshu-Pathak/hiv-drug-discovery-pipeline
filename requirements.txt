@@ -1,0 +1,15 @@
+selfies
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+torch
+tqdm
+pyyaml
+openpyxl
+vina
+meeko
+rdkit-pypi
+openbabel-wheel
+nbformat

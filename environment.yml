@@ -1,0 +1,24 @@
+name: hiv-protease-selfies
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.10
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - pytorch
+  - rdkit
+  - openbabel
+  - pip
+  - pip:
+      - selfies
+      - vina
+      - meeko
+      - tqdm
+      - pyyaml
+      - openpyxl
+      - nbformat

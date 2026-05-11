@@ -1,0 +1,45 @@
+seed: 42
+
+data:
+  zinc_file: data/raw/ZINC_dataset.xlsx
+  chembl_file: data/raw/chembl_hiv_entries.xlsx
+  receptor_pdb: data/raw/1HVR.pdb
+  reference_ligand: data/raw/1hvr_C_XK2.sdf
+
+model:
+  d_model: 512
+  nhead: 8
+  depth: 8
+  dropout: 0.1
+  max_len_min: 32
+  max_len_max: 256
+
+training:
+  pretrain_epochs: 5
+  finetune_epochs: 9
+  pretrain_batch_size: 128
+  finetune_batch_size: 64
+  pretrain_lr: 0.0003
+  finetune_lr: 0.0001
+
+generation:
+  n_samples: 5000
+  temperature_grid: [0.7, 0.8, 0.9, 1.0]
+  top_k_grid: [40, 60, 80, 120]
+
+filtering:
+  qed_min: 0.5
+  sa_max: 5.0
+  molwt_min: 200
+  molwt_max: 800
+  morgan_radius: 2
+  morgan_bits: 2048
+  final_top_n: 200
+
+docking:
+  receptor: data/raw/1HVR.pdb
+  reference_ligand: data/raw/1hvr_C_XK2.sdf
+  box_size: [20.0, 20.0, 20.0]
+  exhaustiveness: 8
+  n_modes: 1
+  workers: 4

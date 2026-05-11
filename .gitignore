@@ -1,0 +1,83 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Secrets / credentials
+# =========================
+kaggle.json
+.env
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Cache / temporary outputs
+# =========================
+cache/
+working/
+outputs/
+outputs/raw/
+
+# =========================
+# Large training checkpoints
+# =========================
+*.pt
+*.pth
+*.ckpt
+*.bin
+
+# =========================
+# Large chemistry outputs
+# =========================
+*.mol2
+
+# Ignore generated docking intermediates
+dockrun/
+ligands/
+*_poses/
+*_tmp/
+
+# =========================
+# Keep important demo/raw files
+# =========================
+
+# Keep raw data folder contents
+!data/raw/
+!data/raw/README.md
+!data/raw/*.csv
+!data/raw/*.xlsx
+!data/raw/*.pdb
+!data/raw/*.sdf
+
+# Keep important docking/demo structures
+!results/docking/
+!results/docking/*.pdbqt
+!results/docking/*.sdf
+
+# Keep visual/demo assets
+!assets/
+!assets/*.png
+!assets/*.jpg
+!assets/*.jpeg

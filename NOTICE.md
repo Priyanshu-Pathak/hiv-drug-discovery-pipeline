@@ -1,0 +1,1 @@
+This repository is provided for academic/research demonstration. No open-source license is included by default. Contact the authors before reusing the code or generated assets beyond review and educational reference.
